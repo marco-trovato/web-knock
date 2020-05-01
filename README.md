@@ -54,7 +54,7 @@ No installation is required, just download the scripts on any location and you'r
   (automatically replaces your previous IP in the firewall whitelist, if it has changed)
   
 
-![](https://github.com/Linkinverse/web-portknock/blob/master/media/explain-diagram.jpg)
+![](https://github.com/Linkinverse/web-portknock/blob/master/media/flowchart.jpg)
 
 **Logs are saved here:** */var/log/youshallnotpass.log*
 
