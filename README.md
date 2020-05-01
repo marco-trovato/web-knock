@@ -123,7 +123,7 @@ No installation is required, just download the scripts on any location and you'r
 
 4. Enjoy the view of botnets trying to enter, by monitoring the failed attempts with the command: `tcptrack -i eth0` 😃
 
-![](https://github.com/Linkinverse/web-portknock/blob/master/media/botnets.gif)
+![](https://github.com/Linkinverse/web-portknock/blob/master/media/botnet-fail.gif)
 
 ![](https://github.com/Linkinverse/web-portknock/blob/master/media/youshallnotpass.gif)
 
