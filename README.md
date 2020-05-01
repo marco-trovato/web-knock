@@ -25,7 +25,7 @@ With web-knock you can quickly add yourself to a whitelist, similarly as port kn
 
 It is simple as just visiting a web page, either with any **browser**, or with a **curl** script; you could even set up the web page address on your **modem** in the "custom dynamic DNS" page (i.e.: Fritz!Box supports that). Then web-knock will replace your previous IP address in the whitelist, with the your new one.
 
-![](https://github.com/Linkinverse/web-ck/blob/master/media/screenshot.png)
+![](https://github.com/Linkinverse/web-knock/blob/master/media/screenshot.png)
 
 You can add to the whitelist as many address as you want!
 
@@ -50,7 +50,7 @@ All is done with a couple of simple and small BASH scripts using only POSIX comm
   (automatically replaces your previous IP in the firewall whitelist, if it has changed)
   
 
-![](https://github.com/Linkinverse/web-portknock/blob/master/media/flowchart.jpg)
+![](https://github.com/Linkinverse/web-knock/blob/master/media/flowchart.jpg)
 
 **Logs are saved here:** */var/log/youshallnotpass.log*
 
@@ -125,9 +125,9 @@ No installation is required: just upload the included "index.php" on a web hosti
 
 4. Get the popcorn and enjoy the view of botnets trying to enter and fail miserably 😃🍿, you can monitor the failing attempts with the command: `tcptrack -i eth0`
 
-![](https://github.com/Linkinverse/web-portknock/blob/master/media/botnet-fail.gif)
+![](https://github.com/Linkinverse/web-knock/blob/master/media/botnet-fail.gif)
 
-![](https://github.com/Linkinverse/web-portknock/blob/master/media/youshallnotpass.gif)
+![](https://github.com/Linkinverse/web-knock/blob/master/media/youshallnotpass.gif)
 
 ------
 
