@@ -43,7 +43,7 @@ No installation is required, just download the scripts on any location and you'r
 
   
 
-- **Main script:** *youshallnotpass.sh*
+- **Main script:** *web-portknock.sh*
 
   (simply calls the firewall update sub-scripts, you can configure this file with your web hosting address, and this to cron to poll for any changes to your IP)
 
@@ -74,7 +74,7 @@ No installation is required, just download the scripts on any location and you'r
 
 ### On the linux server you want to protect:
 
-1. Edit *youshallnotpass.sh* to add the URL address where you uploaded the PHP script. Example of configuration:
+1. Edit *web-portknock.sh* to add the URL address where you uploaded the PHP script. Example of configuration:
 
    ```bash
    youshallnotpass-firewall-update.sh http://yourwebsite.com/myip/ip.txt
@@ -87,7 +87,7 @@ No installation is required, just download the scripts on any location and you'r
    And add the following line:
 
    ```
-   */10    *   *       *       *       /root/youshallnotpass.sh >> /var/log/youshallnotpass.log 2>&1
+   */10    *   *       *       *       /root/web-portknock.sh >> /var/log/youshallnotpass.log 2>&1
    ```
 
    **Note**: `*/10` to update the IP in the whitelist every 10 minutes, it should be often enough, but change it according to your preferences. As opposed to the Dynamic DNS, there is no limit to the number of requests.*
@@ -111,7 +111,7 @@ No installation is required, just download the scripts on any location and you'r
 
    [http://username:password@yourwebaddress.com/subfolder/ip.txt](http://username:password@yourwebaddress.com/subfolder/ip.txt)
 
-2. Wait for **cron** to execute the script **youshallnotpass.sh** you previously edited/customized with the URL where you uploaded the PHP script.
+2. Wait for **cron** to execute the script **web-portknock.sh** you previously edited/customized with the URL where you uploaded the PHP script.
 
    (Suggested curl execution time for polling the new IP: 5-15min)
 
