@@ -1,6 +1,9 @@
 #!/bin/bash
 # THIS IS TO ALLOW SSH, NO REQUESTS LIMITS PER MONTH AS DYNAMIC DNS, ADD TO CRON TO BE EXECUTED AS MANY TIMES YOU WANT
 
+# without touch, no log file would be created if not already exist
+touch /Scripts/file.txt
+
 #please note you have to specify full path for this to work from crontab
 LOGSIZ=$( stat -c %s /var/log/youshallnotpass.log)
 if (( $LOGSIZ > 50000 )); then
