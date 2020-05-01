@@ -60,6 +60,12 @@ All is done with a couple of simple and small BASH scripts using only POSIX comm
 
 No installation is required, just download the scripts on any location and you're ready to go.
 
+### Requirements
+
+* iptables
+* curl
+* awk
+
 ## Configuration
 
 ### On your web server / web hosting with PHP:
