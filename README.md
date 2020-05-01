@@ -131,7 +131,7 @@ Please open a bug tracking ticket here
 
 ### You just appreciate this program:
 
-Send kudos to the original author. [Contact form](http://ispace.altervista.org/msn/).
+Send kudos to the original author [directly to his mobile phone](http://ispace.altervista.org/msn/).
 
 ## Thanks
 
