@@ -1,3 +1,0 @@
-Please read the init script before executing it, change it according to your needs, to make sure all services on your server will continue working.
-
-It works on my machine ¯\_(ツ)_/¯
