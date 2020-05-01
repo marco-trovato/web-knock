@@ -1,0 +1,3 @@
+Please read the init script before executing it, change it according to your needs, and make sure all services on your server will continue working.
+
+It works on my machine ¯\_(?)_/¯
