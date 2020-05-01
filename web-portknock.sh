@@ -18,5 +18,5 @@ date
 # please avoid using same filename ip.txt since the filename is the identifier for the device
 
 echo ---- WHITELIST IP ALLOW ADMIN ----
-./web-portknock-firewall-update.sh https://yourwebsite.com/myip/ip.txt
-./web-portknock-firewall-update.sh http://freewebhosting.com/backupaccess/johnsmith.txt
+./web-portknock-update.sh https://yourwebsite.com/myip/ip.txt
+./web-portknock-update.sh http://freewebhosting.com/backupaccess/johnsmith.txt
