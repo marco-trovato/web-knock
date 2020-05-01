@@ -58,7 +58,7 @@ All is done with a couple of simple and small BASH scripts using only POSIX comm
 
 ## Installation
 
-No installation is required, just download the scripts on any location and you're ready to go.
+No installation is required: just upload the included "index.php" on a web hosting, edit "web-portknock.sh" to include the URL where you uploaded "index.php" and add it to cron; and you're ready to go.
 
 ### Requirements
 
