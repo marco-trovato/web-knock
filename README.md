@@ -136,7 +136,7 @@ Send kudos to the original author [directly to his mobile phone](http://ispace.a
 ## Thanks
 
 * [Pascalbrax](https://github.com/pascalbrax) who taught me the basics.
-* My insomnia
+* My sleep disorder
 
 ## License
 
