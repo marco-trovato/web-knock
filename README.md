@@ -27,7 +27,7 @@ It is simple as just visiting a web page, either with any **browser**, or with a
 
 ![](https://github.com/Linkinverse/web-knock/blob/master/media/screenshot.png)
 
-You can add to the whitelist as many address as you want!
+You can add to the whitelist as many address as you want! **Using a second backup website is suggested.**
 
 All is done with a couple of simple and small BASH scripts using only POSIX commands (awk) without any additional third part software, and best of all: it's completely free and open-source with a **fuckmicrosoftandapple** license, so you are free to customize the script to fit your needs.
 
@@ -54,7 +54,7 @@ All is done with a couple of simple and small BASH scripts using only POSIX comm
 
 **Logs are saved here:** */var/log/youshallnotpass.log*
 
-**Previous IP address are saved here:** */etc/web-portknock/**.txt*
+**Previous IP address are saved on your VPS here:** */etc/web-portknock/**.txt*
 
 ------
 
@@ -83,7 +83,7 @@ No installation is required: just upload the included "index.php" on a web hosti
 1. Edit *web-portknock.sh* to add the URL address where you uploaded the PHP script. Example of configuration:
 
    ```bash
-   web-portknock-update.sh http://yourwebsite.com/myip/ip.txt
+   web-portknock-update.sh http://yourwebsite.com/myip/hard-to-guess-filename.txt
    ```
 
 2. Add the script to *cron*, **for user root** like this:
@@ -115,7 +115,7 @@ No installation is required: just upload the included "index.php" on a web hosti
 
    **Note:** if you used .htpasswd protection you have to paste the URL like this:
 
-   [http://username:password@yourwebaddress.com/subfolder/ip.txt](http://username:password@yourwebaddress.com/subfolder/ip.txt)
+   http://username:password@yourwebaddress.com/subfolder/hard-to-guess-filename.txt
 
 2. Wait for **cron** to execute the script **web-portknock.sh** you previously edited/customized with the URL where you uploaded the PHP script.
 
@@ -151,5 +151,7 @@ Send kudos to the original author [directly to his mobile phone](http://ispace.a
 web-knock is licensed as **fuckmicrosoftandapple**; 100% identical to "GNU General Public License v3.0", it means you are free to use it, redistribute it and/or modify it, as long as you keep this license.
 
 This license has only one limitation: to use this software you have to write only once, your honest opinion about microsoft or apple, on any place of your choosing (i.e.: any online community). Feel free to express your gratitude for decades of frustration, poorly developed/unsecure/bloated/retarded software like bugged RDP with infinite tries, shared NetBIOS exposed to WAN, various *embrace-extend-extinguish* strategies, and overpriced hardware with programmed obsolescence. ❤️
+
+(Just kidding, it's GPL3, read the LICENSE file)
 
 web-knock is distributed in the hope that it will be useful, but AS IS: WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
