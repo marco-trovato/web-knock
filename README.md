@@ -1,31 +1,31 @@
-# web-portknock: allows only you to connect to your server
+# web-knock: allows only you to connect to your server
 
 ```
           ____ ____  _   _   _                       
   _   _  / ___/ ___|| | | | | |  _ __   __ _ ___ ___ 
  | | | | \___ \___ \| |_| | | | | '_ \ / _` / __/ __|
  | |_| |  ___) |__) |  _  | |_| | |_) | (_| \__ \__ \
-  \__,_| |____/____/|_| |_| (_) | .__/ \__,_|___/___/  web-portknock
+  \__,_| |____/____/|_| |_| (_) | .__/ \__,_|___/___/  web-knock
                                 |_|                  
 ```
 
 ## What is it
 
-web-portknock is a simple alternative to port-knocking, to help protect the SSH access to your server.
+web-knock is a simple alternative to port-knocking, to help protect the SSH access to your server.
 
-Protection standard "Fail2ban" effectively blocks brute-force attacks, but also creates huge jails of IPs for large botnets with different IPs, by reading and updating this database of banned addresses at every connection. web-portknock takes a different approach by allowing **only your IP** to connect to your VPS.
+Protection standard "Fail2ban" effectively blocks brute-force attacks, but also creates huge jails of IPs for large botnets with different IPs, by reading and updating this database of banned addresses at every connection. web-knock takes a different approach by allowing **only your IP** to connect to your VPS.
 
 Static IP and dynamic DNS are the best solution for this, but they are not free (even Entrydns and Dnsexit services, which are free, allow only a limited number of requests per month), and *iptables* doesn't even supports Dynamic DNS addresses as firewall rule.
 
 But even if you have a fixed IP at home, or already have a Dynamic DNS, **what if you are on the go with your mobile phone?**
 
-With web-portknock you can quickly add yourself to a whitelist, similarly as port knocking does, but without needing any specific client or extra configuration.
+With web-knock you can quickly add yourself to a whitelist, similarly as port knocking does, but without needing any specific client or extra configuration.
 
 ## How it works
 
-It is simple as just visiting a web page, either with any **browser**, or with a **curl** script; you could even set up the web page address on your **modem** in the "custom dynamic DNS" page (i.e.: Fritz!Box supports that). Then web-portknock will replace your previous IP address in the whitelist, with the your new one.
+It is simple as just visiting a web page, either with any **browser**, or with a **curl** script; you could even set up the web page address on your **modem** in the "custom dynamic DNS" page (i.e.: Fritz!Box supports that). Then web-knock will replace your previous IP address in the whitelist, with the your new one.
 
-![](https://github.com/Linkinverse/web-portknock/blob/master/media/screenshot.png)
+![](https://github.com/Linkinverse/web-ck/blob/master/media/screenshot.png)
 
 You can add to the whitelist as many address as you want!
 
@@ -148,8 +148,8 @@ Send kudos to the original author [directly to his mobile phone](http://ispace.a
 
 ## License
 
-web-portknock is licensed as **fuckmicrosoftandapple**; 100% identical to "GNU General Public License v3.0", it means you are free to use it, redistribute it and/or modify it, as long as you keep this license.
+web-knock is licensed as **fuckmicrosoftandapple**; 100% identical to "GNU General Public License v3.0", it means you are free to use it, redistribute it and/or modify it, as long as you keep this license.
 
 This license has only one limitation: to use this software you have to write only once, your honest opinion about microsoft or apple, on any place of your choosing (i.e.: any online community). Feel free to express your gratitude for decades of frustration, poorly developed/unsecure/bloated/retarded software like bugged RDP with infinite tries, shared NetBIOS exposed to WAN, various *embrace-extend-extinguish* strategies, and overpriced hardware with programmed obsolescence. ❤️
 
-web-portknock is distributed in the hope that it will be useful, but AS IS: WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+web-knock is distributed in the hope that it will be useful, but AS IS: WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
