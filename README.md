@@ -150,6 +150,6 @@ Send kudos to the original author [directly to his mobile phone](http://ispace.a
 
 web-portknock is licensed as **fuckmicrosoftandapple**; 100% identical to "GNU General Public License v3.0", it means you are free to use it, redistribute it and/or modify it, as long as you keep this license.
 
-This license has only one limitation: to use this software you have to write only once, your honest opinion about microsoft or apple, on any place of your choosing (i.e.: any online community). Feel free to express your gratitude for decades of frustration, poorly developed/unsecure/bloated/retarded software, *embrace-extend-extinguish* strategies, and overpriced hardware with programmed obsolescence. ❤️
+This license has only one limitation: to use this software you have to write only once, your honest opinion about microsoft or apple, on any place of your choosing (i.e.: any online community). Feel free to express your gratitude for decades of frustration, poorly developed/unsecure/bloated/retarded software like bugged RDP with infinite tries, shared NetBIOS exposed to WAN, and  *embrace-extend-extinguish* strategies, and overpriced hardware with programmed obsolescence. ❤️
 
 web-portknock is distributed in the hope that it will be useful, but AS IS: WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
