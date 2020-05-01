@@ -1,4 +1,4 @@
-# Youshallnotpass: allows only you to connect to your server
+# web-portknock: allows only you to connect to your server
 
 ```
           ____ ____  _   _   _                       
@@ -11,19 +11,19 @@
 
 ## What is it
 
-Protection standard "Fail2ban" effectively blocks brute-force attacks, but also creates huge jails of IPs for large botnets with different IPs, by reading and updating this database of banned addresses at every connection. Youshallnotpass takes a different approach by allowing **only your IP** to connect to your machine.
+Protection standard "Fail2ban" effectively blocks brute-force attacks, but also creates huge jails of IPs for large botnets with different IPs, by reading and updating this database of banned addresses at every connection. web-portknock takes a different approach by allowing **only your IP** to connect to your machine.
 
 Static IP and dynamic DNS are the best solution for this, but they are not free (even Entrydns and Dnsexit services, which are free, allow only a limited number of requests per month), and *iptables* doesn't even supports Dynamic DNS addresses as firewall rule.
 
 But even if you have a fixed IP at home, or already have a Dynamic DNS, **what if you are on the go with your mobile phone?**
 
-With Youshallotpass you can quickly add yourself to a whitelist, similarly as port knocking does, but without needing any specific client or extra configuration.
+With web-portknock you can quickly add yourself to a whitelist, similarly as port knocking does, but without needing any specific client or extra configuration.
 
 ## How it works
 
-It is simple as just visiting a web page, either with any **browser**, or with a **curl** script; you could even set up the web page address on your **modem** in the "custom dynamic DNS" page (i.e.: Fritz!Box supports that). Then Youshallnotpass will replace your previous IP address in the whitelist, with the your new one.
+It is simple as just visiting a web page, either with any **browser**, or with a **curl** script; you could even set up the web page address on your **modem** in the "custom dynamic DNS" page (i.e.: Fritz!Box supports that). Then web-portknock will replace your previous IP address in the whitelist, with the your new one.
 
-![](https://github.com/Linkinverse/youshallnotpass/blob/master/media/screenshot.png)
+![](https://github.com/Linkinverse/web-portknock/blob/master/media/screenshot.png)
 
 You can add to the whitelist as many address as you want!
 
@@ -54,7 +54,7 @@ No installation is required, just download the scripts on any location and you'r
   (automatically replaces your previous IP in the firewall whitelist, if it has changed)
   
 
-![](https://github.com/Linkinverse/youshallnotpass/blob/master/media/diagram.jpg)
+![](https://github.com/Linkinverse/web-portknock/blob/master/media/diagram.jpg)
 
 **Logs are saved here:** */var/log/youshallnotpass.log*
 
@@ -77,7 +77,7 @@ No installation is required, just download the scripts on any location and you'r
 1. Edit *youshallnotpass.sh* to add the URL address where you uploaded the PHP script. Example of configuration:
 
    ```bash
-   youshallnotpass-firewall-update.sh http://yourwebsite.altervista.org/myip/ip.txt
+   youshallnotpass-firewall-update.sh http://yourwebsite.com/myip/ip.txt
    ```
 
 2. Add the script to *cron*, **for user root** like this:
@@ -119,9 +119,9 @@ No installation is required, just download the scripts on any location and you'r
 
 4. Enjoy the view of botnets trying to enter, by monitoring the failed attempts with the command: `tcptrack -i eth0` 😃
 
-![](https://github.com/Linkinverse/youshallnotpass/blob/master/media/botnet.gif)
+![](https://github.com/Linkinverse/web-portknock/blob/master/media/botnet.gif)
 
-![](https://github.com/Linkinverse/youshallnotpass/blob/master/media/youshallnotpass.gif)
+![](https://github.com/Linkinverse/web-portknock/blob/master/media/youshallnotpass.gif)
 
 ------
 
