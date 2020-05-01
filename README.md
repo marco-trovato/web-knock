@@ -1,4 +1,4 @@
-# web-portknock: allows only you to connect to your VPS
+# web-portknock: allows only you to connect to your server
 
 ```
           ____ ____  _   _   _                       
