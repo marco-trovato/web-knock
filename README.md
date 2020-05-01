@@ -68,7 +68,7 @@ No installation is required, just download the scripts on any location and you'r
 2. **Add one of the following protections:**
     1. To avoid other people finding this subdirectory, make sure the file *.htaccess* on the webserver home, includes the following line: `Options -Indexes`
     2. Protect the your newly created subdirectory with a .htpasswd file
-    3. Modify the PHP script to ask for a password
+    3. Modify the PHP script to ask for a password (please note if you chose this method it can't be automatised)
 
 ### On the linux server you want to protect:
 
