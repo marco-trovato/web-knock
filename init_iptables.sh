@@ -72,12 +72,11 @@ echo Adding access from trusted IP - This could take few seconds if using dynami
 #iptables -A INPUT -p tcp -s 132.18.20.5 -m state --state NEW,ESTABLISHED -j ACCEPT
 
 echo "Now going for IPs that are not static..."
-echo "Init web-portknock and logfile..."
+echo "Init web-portknock..."
 #re-init all previously saved ips
 rm -f /etc/web-portknock/*
+echo "Executing web-portknock..."
 /root/web-portknock.sh >> /var/log/youshallnotpass.log
-# LOGFILE MUST EXIST OR NOTHING WILL BE LOGGED
-echo Log file created successfully. From now on dyndns changes will be logged there.
 echo "Please read the log file if you want to verify that the IP were added successfully."
 
 echo Allowing ping...
