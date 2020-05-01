@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# remember you can do this if needed by other programs, in this case ping
+# remember you can always do this if needed by other programs, in this case ping
 # it passes the curl output, the file content, as parameter of ping
 # curl -sS http://yourwebsite.com/ip/ip.txt | xargs ping
 
