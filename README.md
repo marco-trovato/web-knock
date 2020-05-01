@@ -43,7 +43,7 @@ All is done with a couple of simple and small BASH scripts using only POSIX comm
 
   
 
-- **Firewall update script:** *web-portknock-firewall-update.sh*
+- **Firewall update script:** *web-portknock-update.sh*
 
   (automatically replaces your previous IP in the firewall whitelist, if it has changed)
   
@@ -81,7 +81,7 @@ No installation is required, just download the scripts on any location and you'r
 1. Edit *web-portknock.sh* to add the URL address where you uploaded the PHP script. Example of configuration:
 
    ```bash
-   web-portknock-firewall-update.sh http://yourwebsite.com/myip/ip.txt
+   web-portknock-update.sh http://yourwebsite.com/myip/ip.txt
    ```
 
 2. Add the script to *cron*, **for user root** like this:
@@ -96,7 +96,7 @@ No installation is required, just download the scripts on any location and you'r
 
    **Note**: `*/10` to update the IP in the whitelist every 10 minutes, it should be often enough, but change it according to your preferences. As opposed to the Dynamic DNS, there is no limit to the number of requests.*
 
-3. There is no need to modify the file *web-portknock-firewall-update.sh*, unless you want to change the default ports to open. Default ports: 21, 22 (FTP, SSH)
+3. There is no need to modify the file *web-portknock-update.sh*, unless you want to change the default ports to open. Default ports: 21, 22 (FTP, SSH)
 
 ### Verify the rules and connections
 
@@ -119,7 +119,7 @@ No installation is required, just download the scripts on any location and you'r
 
    (Suggested curl execution time for polling the new IP: 5-15min)
 
-3. *web-portknock-firewall-update.sh* subscript will be called and replace (or add, if not present), a rule on iptables to let you in from the ports you selected. Everyone else will see the ports closed. Default ports: 21,22 (FTP, SSH), customize the script with the port you need if necessary.
+3. *web-portknock-update.sh* subscript will be called and replace (or add, if not present), a rule on iptables to let you in from the ports you selected. Everyone else will see the ports closed. Default ports: 21,22 (FTP, SSH), customize the script with the port you need if necessary.
 
 4. Enjoy the view of botnets trying to enter, by monitoring the failed attempts with the command: `tcptrack -i eth0` 😃
 
