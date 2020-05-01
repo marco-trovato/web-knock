@@ -1,9 +1,5 @@
 # Youshallnotpass: allows only you to connect to your server
 
-[TOC]
-
-
-
 ```
           ____ ____  _   _   _                       
   _   _  / ___/ ___|| | | | | |  _ __   __ _ ___ ___ 
