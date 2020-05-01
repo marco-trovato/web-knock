@@ -31,10 +31,6 @@ All is done with a couple of simple and small BASH scripts using only POSIX comm
 
 ------
 
-## Installation
-
-No installation is required, just download the scripts on any location and you're ready to go.
-
 ## Components
 
 - **PHP script:** *index.php*
@@ -61,6 +57,10 @@ No installation is required, just download the scripts on any location and you'r
 **Previous IP address are saved here:** */etc/web-portknock/**.txt*
 
 ------
+
+## Installation
+
+No installation is required, just download the scripts on any location and you're ready to go.
 
 ## Configuration
 
