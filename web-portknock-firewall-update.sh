@@ -5,10 +5,10 @@
 # curl -sS http://yourwebsite.com/ip/ip.txt | xargs ping
 
 #create folder only if not exist
-[ -d /etc/youshallnotpass ] || mkdir /etc/youshallnotpass
+[ -d /etc/web-portknock ] || mkdir /etc/web-portknock
 HOST=$1
 #basename extracts the file on a path, perfect to erase the base url and keep the filename. it also doesnt care for the http string
-HOSTFILE="/etc/youshallnotpass/$(basename $HOST)"
+HOSTFILE="/etc/web-portknock/$(basename $HOST)"
 CHAIN="INPUT"  # change this to whatever chain you want.
 IPTABLES="/sbin/iptables"
 
