@@ -29,8 +29,6 @@ You can add to the whitelist as many address as you want!
 
 All is done with a couple of simple and small BASH scripts using only POSIX commands (awk) without any additional third part software, and best of all: it's completely free and open-source with a **fuckmicrosoftandapple** license, so you are free to customize the script to fit your needs.
 
-------
-
 ## Components
 
 - **PHP script:** *index.php*
