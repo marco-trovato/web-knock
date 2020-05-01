@@ -121,7 +121,7 @@ No installation is required, just download the scripts on any location and you'r
 
 3. *web-portknock-update.sh* subscript will be called and replace (or add, if not present), a rule on iptables to let you in from the ports you selected. Everyone else will see the ports closed. Default ports: 21,22 (FTP, SSH), customize the script with the port you need if necessary.
 
-4. Enjoy the view of botnets trying to enter, by monitoring the failed attempts with the command: `tcptrack -i eth0` 😃
+4. Enjoy the view of botnets trying to enter and fail miserably 😃🍿, you can monitor the failing attempts with the command: `tcptrack -i eth0`
 
 ![](https://github.com/Linkinverse/web-portknock/blob/master/media/botnet-fail.gif)
 
