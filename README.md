@@ -11,7 +11,7 @@
 
 ## What is it
 
-web-knock is a simple alternative to port-knocking, to keep some ports on your server open only and help to avoid brute-force attacks.
+**web-knock is a simple alternative to port-knocking, to keep some ports on your server open only to you, and help to avoid brute-force attacks.**
 
 **Note: this script is not an authentication method.** So please do not consider it a substitute to public key authentication, or PAM module for TOTP/2FA authentication, nor a substitute for brute force protection like fail2ban/SSHGuard. You are still encouraged to change the standard SSH port, and/or apply all the required security measures to protect your server.
 
