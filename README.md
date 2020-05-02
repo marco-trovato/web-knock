@@ -56,17 +56,17 @@ All is done with a couple of simple and small BASH scripts using only POSIX comm
 
 ![](https://github.com/Linkinverse/web-knock/blob/master/media/flowchart.jpg)
 
+### Note about security: please note that both your IP and the PHP script will be in an protected subfolder.
+
 **Logs are saved here:** */var/log/youshallnotpass.log*
 
 **Previous IP address are saved on your VPS here:** */etc/web-portknock/**.txt*
-
-### Note about security: please note that both your IP and the PHP script will be in an protected subfolder.
 
 ------
 
 ## Installation
 
-No installation is required: just upload the included "index.php" on a web hosting, edit "web-portknock.sh" to include the URL where you uploaded "index.php" and add it to cron; and you're ready to go.
+No installation is required: just upload the included "index.php" on a web hosting (MySQL is not required), add "web-portknock.sh" to cron for root user, then edit it to include the correct URL where you uploaded "index.php"; that's all, you're ready to go (See [Configuration](#Configuration) for further details).
 
 ### Requirements
 
