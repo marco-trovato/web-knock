@@ -31,9 +31,9 @@ It is simple as just visiting a web page, either with any **browser**, or with a
 
 ![](https://github.com/Linkinverse/web-knock/blob/master/media/screenshot.png)
 
-You can add to the whitelist as many address as you want! **Using a second backup website is suggested.**
+You can add to the whitelist as many address as you want! **Using a second backup website is suggested**, in case the website goes offline.
 
-All is done with a couple of simple and small BASH scripts using only POSIX commands (awk) without any additional third part software, and best of all: it's completely free and open-source with a **fuckmicrosoftandapple** license ([see below](#License)), so you are free to customize the script to fit your needs.
+All is done with a couple of simple and small BASH scripts using only POSIX commands (awk) without any additional third part software, and best of all: it's completely free and open-source with a **fuckmicrosoftandapple** license ([see below](#License)), so you are free to customize the script to fit your needs. If you want to add some security feature feel free to fork it.
 
 ## Components
 
@@ -59,6 +59,8 @@ All is done with a couple of simple and small BASH scripts using only POSIX comm
 **Logs are saved here:** */var/log/youshallnotpass.log*
 
 **Previous IP address are saved on your VPS here:** */etc/web-portknock/**.txt*
+
+### Note about security: please note that both your IP and the PHP script will be in an protected subfolder.
 
 ------
 
