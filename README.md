@@ -66,7 +66,7 @@ All is done with a couple of simple and small BASH scripts using only POSIX comm
 
 ## Installation
 
-No installation is required: just upload the included "index.php" on a web hosting (MySQL is not required), add "web-portknock.sh" to cron for root user, then edit it to include the correct URL where you uploaded "index.php"; that's all, you're ready to go (See [Configuration](#Configuration) for further details).
+No installation is required: just upload the included "index.php" on a web hosting (MySQL is not required), add "web-portknock.sh" to cron for root user, then edit it to include the correct URL where you uploaded "index.php"; that's all, you're ready to go (see [Configuration](#Configuration) for further details).
 
 ### Requirements
 
