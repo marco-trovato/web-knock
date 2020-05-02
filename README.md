@@ -13,6 +13,8 @@
 
 web-knock is a simple alternative to port-knocking, to help protect the SSH access to your server.
 
+**Please note this script is not a substitute to public key authentication, nor fail2ban.** You are still encouraged to change the standard SSH port, and/or apply all the suggested security measures to protect your server.
+
 Protection standard "Fail2ban" effectively blocks brute-force attacks, but also creates huge jails of IPs for large botnets with different IPs, by reading and updating this database of banned addresses at every connection. web-knock takes a different approach by allowing **only your IP** to connect to your VPS.
 
 Static IP and dynamic DNS are the best solution for this, but they are not free (even Entrydns and Dnsexit services, which are free, allow only a limited number of requests per month), and *iptables* doesn't even supports Dynamic DNS addresses as firewall rule.
