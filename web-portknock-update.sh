@@ -28,7 +28,8 @@ fi
 # lookup host name from dns tables
 HOST="$1"
 #new method with curl, no dyndns or fixed ip required!
-IP=$(curl -A "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36" -sS $HOST)
+#security improvement --max-filesize 20 bytes
+IP=$(curl -A "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36" --max-filesize 20 --max-time 10 -sS $HOST)
 #new system to validate ip
 if [[ $IP =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
     echo "Valid IP: $IP"
