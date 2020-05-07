@@ -11,9 +11,11 @@
 
 ## What is it
 
-web-knock is a simple alternative to port-knocking, to keep some ports on your server open only to you, and help to avoid brute-force attacks.
+web-knock is a simple and free alternative to the practice of protecting admin port of your server with a paid fixed IP or dynamic DNS.
 
-**Note: this script is not an authentication method.** So please do not consider it a substitute to public key authentication, or PAM module for TOTP/2FA authentication, nor a substitute for brute force protection like fail2ban/SSHGuard. You are still encouraged to change the standard SSH port, and/or apply all the required security measures to protect your server.
+Even if you don't have a static IP or dynamic DNS, with this small script your server firewall will keep some ports on your server opened only to you. This can help to avoid brute-force attacks, by allowing access to authentication only to you.
+
+**Note: this script is not an authentication method.** So please do not consider it a substitute to public key authentication, or PAM module for TOTP/2FA authentication, nor a substitute for brute force protection like fail2ban/SSHGuard. You are still encouraged to apply all the required security measures to protect your server.
 
 ## Use case
 
@@ -33,7 +35,7 @@ It is simple as just visiting a web page, either with any **browser**, or with a
 
 You can add to the whitelist as many address as you want! **Using a second backup website is recommended**, in case the website goes offline.
 
-All is done with a couple of simple and small BASH scripts using only POSIX commands (awk) without any additional third part software, and best of all: it's completely free and open-source with a **fuckmicrosoftandapple** license ([see below](#License)), so you are free to customize the script to fit your needs. If you want to add some security feature feel free to fork it.
+All is done with a couple of simple and small BASH scripts using only POSIX commands (awk) without any additional third part software, and best of all: it's completely free and open-source, so you are free to customize the script to fit your needs. If you want to add some security feature feel free to fork it.
 
 ## Components
 
@@ -143,7 +145,7 @@ Please open a bug tracking ticket here
 
 ### You just appreciate this program:
 
-Send kudos to the original author [directly to his mobile phone](http://ispace.altervista.org/msn/).
+Send kudos to the original author Marco Trovato using this [contact form](http://ispace.altervista.org/msn/).
 
 ## Thanks
 
@@ -152,10 +154,8 @@ Send kudos to the original author [directly to his mobile phone](http://ispace.a
 
 ## License
 
-web-knock is licensed as **fuckmicrosoftandapple**; 100% identical to "GNU General Public License v3.0", it means you are free to use it, redistribute it and/or modify it, as long as you keep this license.
+web-knock is licensed as GNU General Public License v3.0, it means you are free to use it, redistribute it and/or modify it, as long as you keep this license.
 
-This license has only one limitation: to use this software you have to write only once, your honest opinion about microsoft or apple, on any place of your choosing (i.e.: any online community). Feel free to express your gratitude for decades of frustration, poorly developed/unsecure/bloated/retarded software like bugged RDP with infinite tries, shared NetBIOS exposed to WAN, various *embrace-extend-extinguish* strategies, and overpriced hardware with programmed obsolescence. ❤️
-
-(Just kidding, it's GPL3, read the LICENSE file)
+If you use this software please consider writing your honest opinion about microsoft or apple, on any place of your choosing (i.e.: any online community), and feel free to express your gratitude for decades of frustration, poorly developed/unsecure/bloated/retarded software like bugged RDP with infinite tries, shared NetBIOS exposed to WAN, various *embrace-extend-extinguish* strategies, and overpriced hardware with programmed obsolescence. ❤️
 
 web-knock is distributed in the hope that it will be useful, but AS IS: WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
