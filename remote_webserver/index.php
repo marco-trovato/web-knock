@@ -1,5 +1,29 @@
 <?php
 
+// quick password protection
+if (!isset($_POST['pass']))
+    {?>
+            <form method="POST">
+            <center><br><br><br>You are supposed to visit this page from a foreign or mobile network<br>
+            <input type="password" placeholder="Password" name="pass"></input>
+            <input type="submit" name="submit" value="Enter"></input>
+            </center>
+            </form>
+    <?
+    die();
+    } else { // it means it is set
+
+      //sanitize text input before any usage
+      $sanitized_pass = htmlspecialchars($_POST['pass'], ENT_QUOTES, 'UTF-8');
+      // REPLACE THE NEXT LINE WITH YOUR PASSWORD ***********
+      if($sanitized_pass != "YOUR_SECRET_PASSWORD_HERE")
+      {
+          die();
+      }
+}
+
+//----------------------------------
+
 $filename = "ip.txt";
 
 // reading old ip saved
