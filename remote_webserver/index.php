@@ -15,6 +15,11 @@ if (!isset($_POST['pass']))
 
       //sanitize text input before any usage
       $sanitized_pass = htmlspecialchars($_POST['pass'], ENT_QUOTES, 'UTF-8');
+      $sanitized_pass = strip_tags($sanitized_pass);
+      $sanitized_pass = stripslashes($sanitized_pass);
+      $sanitized_pass = substr($sanitized_pass, 0, 400); //tested, works, it cuts eccessive size in case of crafted POST
+
+      // dirty simple check against hardcoded password
       // REPLACE THE NEXT LINE WITH YOUR PASSWORD ***********
       if($sanitized_pass != "YOUR_SECRET_PASSWORD_HERE")
       {
